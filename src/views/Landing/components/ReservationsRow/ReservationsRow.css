@@ -1,0 +1,31 @@
+.reservations-row {
+  padding: 10rem var(--mainPaddingX);
+  background-image: url("./images/homepage/ready-bg-desktop.jpg");
+  background-size: cover;
+  background-position: fixed;
+  color: var(--primarycolor);
+}
+
+.section-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 950px) {
+  .reservations-row {
+    background-image: url("./images/homepage/ready-bg-tablet.jpg");
+  }
+  .section-content {
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .reservations-row {
+    background-image: url("./images/homepage/ready-bg-mobile.jpg");
+  }
+}

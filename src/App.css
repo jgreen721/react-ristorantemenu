@@ -1,0 +1,107 @@
+.app {
+  --maindarkBg: var(--codgray);
+  --primarycolor: var(--white);
+  font-family: var(--mainFont);
+  max-width: 144rem;
+  margin: 0 auto;
+  border: 2px solid black;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/* Animations */
+
+.delay-1 {
+  --delay: 0.25s;
+}
+
+.delay-2 {
+  --delay: 0.5s;
+}
+
+.delay-3 {
+  --delay: 0.75s;
+}
+
+.delay-5 {
+  --delay: 2s;
+}
+
+.pre-animate-lower {
+  transform: translateY(100vh);
+}
+
+.pre-animate-left {
+  transform: translateX(100vw);
+}
+
+.pre-animate-shrink {
+  transform: scale(0);
+}
+
+.drawsvg {
+  animation: drawsvg 2s forwards;
+}
+
+@keyframes drawsvg {
+  85% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    fill: white;
+    stroke-dashoffset: 0;
+  }
+}
+
+.rise-up {
+  transform: translateY(100vh);
+  animation: riseup 0.75s var(--delay) forwards;
+}
+
+@keyframes riseup {
+  75% {
+    transform: translateY(-1rem);
+  }
+  100% {
+    transform: translateY(0rem);
+  }
+}
+
+.slide-right {
+  transform: translateX(-100vw);
+  animation: slideright 0.75s var(--delay) forwards;
+}
+
+@keyframes slideright {
+  75% {
+    transform: translateX(2rem);
+  }
+  100% {
+    transform: translateX(0rem);
+  }
+}
+
+.shine {
+  animation: shinebright 0.75s var(--delay) forwards;
+}
+
+@keyframes shinebright {
+  100% {
+    text-shadow: 1px 1px 1px var(--white), 1px 1px 5px var(--white),
+      1px 1px 10px var(--white);
+  }
+}
+
+.scale-grow {
+  transform: scale(0);
+  animation: scalegrow 1s forwards;
+}
+
+@keyframes scalegrow {
+  75% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
