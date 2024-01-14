@@ -1,0 +1,9 @@
+.highlights-content-row {
+  display: flex;
+  padding: 12rem var(--mainPaddingX);
+  background: var(--mainDarkBg);
+}
+
+.highlights-column {
+  flex: 1;
+}
