@@ -1,6 +1,6 @@
 .footer {
-  background: var(--codgray);
-  color: var(--primarycolor);
+  background: var(--mainDarkBg);
+  color: var(--primaryColor);
   display: flex;
   align-items: center;
   justify-content: space-between;

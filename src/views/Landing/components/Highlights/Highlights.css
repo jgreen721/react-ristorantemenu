@@ -1,9 +1,40 @@
+.highlights-container {
+  background: var(--mainDarkBg);
+  color: var(--primaryColor);
+  padding: 12rem var(--mainPaddingX);
+  /* border: 5px solid red; */
+  /* position: relative;
+  z-index: -22; */
+}
 .highlights-content-row {
   display: flex;
-  padding: 12rem var(--mainPaddingX);
-  background: var(--mainDarkBg);
+  /* border: 3px solid white; */
+  gap: 8.5rem;
 }
 
 .highlights-column {
   flex: 1;
+}
+
+.highlight-item {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.highlight-item-text-content {
+  text-align: start;
+}
+
+@media screen and (max-width: 950px) {
+  .highlights-content-row {
+    flex-direction: column;
+    text-align: center;
+    gap: 3rem;
+  }
+
+  .highlights-header-card {
+    padding: 0 14rem;
+  }
 }

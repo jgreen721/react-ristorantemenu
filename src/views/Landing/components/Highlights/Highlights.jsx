@@ -17,8 +17,8 @@ const Highlights = () => {
             <div className="highlights-column">
                 <div className="highlights-header-card">
                     <img src={patternDivide} alt="" />
-                    <h2>A few highlights from our menu</h2>
-                    <h5>  We cater for all dietary requirements, but here’s a glimpse at some of our diner’s favourites. 
+                    <h2 className="my-2">A few highlights from our menu</h2>
+                    <h5 className="thin">  We cater for all dietary requirements, but here’s a glimpse at some of our diner’s favourites. 
   Our menu is revamped every season.</h5>
                 </div>
             </div>

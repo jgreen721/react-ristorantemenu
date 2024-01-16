@@ -38,6 +38,7 @@ const SectionRow = ({section}) => {
 
         {!section.imgFirst &&
          <div className="section-column relative">
+            
             <div className="section-svg-overlay bottom-end">
                 <img className="section-svg" src={section.svgPattern} alt="" />
             </div>

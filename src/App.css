@@ -1,6 +1,6 @@
 .app {
-  --maindarkBg: var(--codgray);
-  --primarycolor: var(--white);
+  --mainDarkBg: var(--codgray);
+  --primaryColor: var(--white);
   font-family: var(--mainFont);
   max-width: 144rem;
   margin: 0 auto;

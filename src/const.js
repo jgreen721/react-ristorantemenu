@@ -15,6 +15,25 @@ export const locallySourcedTablet =
 export const locallySourcedMobile =
   "./images/homepage/locally-sourced-mobile.jpg";
 
+export const familyGatheredDesktop =
+  "./images/homepage/family-gathering-desktop.jpg";
+export const familyGatheredTablet =
+  "./images/homepage/family-gathering-tablet.jpg";
+export const familyGatheredMobile =
+  "./images/homepage/family-gathering-mobile.jpg";
+
+export const socialEventsDesktop =
+  "./images/homepage/social-events-desktop.jpg";
+export const socialEventsTablet = "./images/homepage/social-events-tablet.jpg";
+export const socialEventsMobile = "./images/homepage/social-events-mobile.jpg";
+
+export const specialEventsDesktop =
+  "./images/homepage/special-events-desktop.jpg";
+export const specialEventsTablet =
+  "./images/homepage/special-events-tablet.jpg";
+export const specialEventsMobile =
+  "./images/homepage/special-events-mobile.jpg";
+
 /*SVG icons */
 
 export const curveBottomRight =

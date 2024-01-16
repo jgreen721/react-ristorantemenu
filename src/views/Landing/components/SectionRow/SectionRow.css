@@ -20,16 +20,28 @@
   transform: translateY(5rem);
 }
 
+.section-img-container {
+  border: 3px solid blue;
+}
+
+.section-img {
+  position: relative;
+  /* z-index: 50;
+  border: 4px solid red; */
+}
+
 .section-svg-overlay {
   position: absolute;
   inset: 0;
+  width: 100%;
+  border: 3px solid green;
 }
 
 .flip-svg {
   transform: rotateX(180deg);
 }
 
-.center-start {
+/* .center-start {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -39,7 +51,7 @@
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
-}
+} */
 
 .section-column {
   display: flex;

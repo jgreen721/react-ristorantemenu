@@ -3,7 +3,7 @@
   background-image: url("/images/homepage/ready-bg-desktop.jpg");
   background-size: cover;
   background-position: fixed;
-  color: var(--primarycolor);
+  color: var(--primaryColor);
 }
 
 .section-content {

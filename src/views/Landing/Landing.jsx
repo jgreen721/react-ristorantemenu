@@ -1,5 +1,5 @@
 import React from 'react'
-import { Hero,Highlights,ReservationsRow, SectionRow } from './components'
+import { Hero,SectionRow,Highlights,Gathering,ReservationsRow } from './components'
 import { enjoyableDesktop, enjoyableTablet, enjoyableMobile, locallySourcedDesktop, locallySourcedTablet, locallySourcedMobile, curveBottomLeft, curveBottomRight, patternDivide } from '../../const'
 import "./Landing.css"
 
@@ -16,6 +16,7 @@ const Landing = () => {
         <SectionRow section={section} key={section.id}/>
       ))}
       <Highlights/>
+      <Gathering/>
         <ReservationsRow/>
     </div>
   )
