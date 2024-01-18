@@ -4,11 +4,11 @@ import {Footer} from "./components"
 import './App.css'
 
 function App() {
-  const [showContact,setShowContact] = useState(false)
+  const [showContact,setShowContact] = useState(false);
 
   return (
     <div className="app">
-      {showContact ? <Contact/> : <Landing/>}
+      {showContact ? <Contact/> : <Landing setShowContact={setShowContact}/>}
       <Footer/>
     </div>
   )

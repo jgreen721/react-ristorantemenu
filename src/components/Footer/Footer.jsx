@@ -28,10 +28,10 @@ const Footer = () => {
             <li className={isVisible ? "schedule-item footer-item rise-up delay-1" : "schedule-item footer-item pre-animate-lower"}>
                 <h5 className={isVisible ? "address-item footer-item shine delay-5" : "address-item footer-item pre-animate-lower"}>Open times</h5></li>
             <li className={isVisible ? "schedule-item footer-item rise-up delay-2" : "schedule-item footer-item pre-animate-lower"}>
-                <h5 className="thin uppercase">Mon - Fri: 09:00 AM - 10:00 PM</h5>
+                <h5 className="thin uppercase no-wrap">Mon - Fri: 09:00 AM - 10:00 PM</h5>
             </li>
             <li className={isVisible ? "schedule-item footer-item rise-up delay-3" : "schedule-item footer-item"}>
-                <h5 className="thin uppercase">Sat - Sun: 09:00 AM - 11:30 PM</h5>
+                <h5 className="thin uppercase no-wrap">Sat - Sun: 09:00 AM - 11:30 PM</h5>
             </li>
         </ul>
         </div>

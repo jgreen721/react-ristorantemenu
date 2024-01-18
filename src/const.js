@@ -4,6 +4,10 @@ export const heroDesktop = "./images/homepage/hero-bg-desktop.jpg";
 export const heroTablet = "./images/homepage/hero-bg-tablet.jpg";
 export const heroMobile = "./images/homepage/hero-bg-mobile.jpg";
 
+export const heroBookingDesktop = "./images/booking/hero-bg-desktop.jpg";
+export const heroBookingTablet = "./images/booking/hero-bg-tablet.jpg";
+export const heroBookingMobile = "./images/booking/hero-bg-mobile.jpg";
+
 export const enjoyableDesktop = "./images/homepage/enjoyable-place-desktop.jpg";
 export const enjoyableTablet = "./images/homepage/enjoyable-place-tablet.jpg";
 export const enjoyableMobile = "./images/homepage/enjoyable-place-mobile.jpg";
@@ -57,3 +61,8 @@ export const chocolateMousseDesktop =
 export const chocolateMousseTablet =
   "./images/homepage/chocolate-desktop-tablet.jpg";
 export const chocolateMousseMobile = "./images/homepage/chocolate-mobile.jpg";
+
+export const arrowIcon = "./images/icons/icon-arrow.svg";
+export const checkIcon = "./images/icons/icon-check.svg";
+export const minusIcon = "./images/icons/icon-minus.svg";
+export const plusIcon = "./images/icons/icon-plus.svg";

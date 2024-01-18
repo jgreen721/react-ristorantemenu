@@ -4,9 +4,9 @@ const HighlighItem = ({item,isVisible}) => {
   return (
     <li className={isVisible ? "highlight-item" : "highlight-item"}>
       <div className="highlight-img-div">
-        <picture>
+       
           <img src={item.img.desktop}/>
-        </picture>
+
       </div>
       <div className="highlight-item-text-content">
         <h4>{item.name}</h4>

@@ -6,9 +6,9 @@ export const useObserver = ref =>{
     const [isVisible,setIsVisible] = useState(false);
 
     const observer = new IntersectionObserver(([entry])=>{
-        console.log(entry)
+        // console.log(entry)
         if(entry.isIntersecting){
-            console.log('element is visible')
+            // console.log('element is visible')
             setIsVisible(true);
            observer.unobserve(entry.target)
         }
@@ -23,7 +23,12 @@ export const useObserver = ref =>{
         }
        
 
-        return ()=> observer.unobserve(ref.current);
+        return ()=> {
+            if(ref.current){
+             observer.unobserve(ref.current);
+            }
+            console.log("clean up!!")
+        }
     })
 
     return {isVisible}

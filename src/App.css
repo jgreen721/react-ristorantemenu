@@ -105,3 +105,17 @@
     transform: scale(1);
   }
 }
+
+.drop-down {
+  transform: translateY(-50rem);
+  animation: dropdown 1s var(--delay) forwards;
+}
+
+@keyframes dropdown {
+  75% {
+    transform: translateY(3.1rem);
+  }
+  100% {
+    transform: translateY(0rem);
+  }
+}

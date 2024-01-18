@@ -21,7 +21,7 @@
 }
 
 .section-img-container {
-  border: 3px solid blue;
+  /* border: 3px solid blue; */
 }
 
 .section-img {
@@ -34,7 +34,7 @@
   position: absolute;
   inset: 0;
   width: 100%;
-  border: 3px solid green;
+  /* border: 3px solid green; */
 }
 
 .flip-svg {

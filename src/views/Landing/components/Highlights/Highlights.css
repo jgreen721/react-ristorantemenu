@@ -9,7 +9,7 @@
 .highlights-content-row {
   display: flex;
   /* border: 3px solid white; */
-  gap: 8.5rem;
+  gap: 12rem;
 }
 
 .highlights-column {
@@ -19,8 +19,28 @@
 .highlight-item {
   display: flex;
   align-items: center;
-  gap: 2rem;
-  margin-bottom: 3rem;
+  gap: 6rem;
+  /* margin-bottom: 3rem; */
+  padding: 2rem 0;
+}
+
+.highlight-item:nth-child(2) {
+  border-top: 2px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.highlight-img-div {
+  position: relative;
+}
+
+.highlight-img-div::after {
+  content: "";
+  right: -25%;
+  width: 25%;
+  height: 2px;
+  top: 2rem;
+  background: var(--bronze);
+  position: absolute;
 }
 
 .highlight-item-text-content {

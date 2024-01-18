@@ -2,7 +2,7 @@ import React from 'react'
 import { logoIcon, heroDesktop, heroTablet, heroMobile } from '../../../../const'
 import "./Hero.css"
 
-const Hero = () => {
+const Hero = ({setShowContact}) => {
   return (
     <header className="hero">
          <div className="desktop-hero hero-content-column">
@@ -33,7 +33,7 @@ const Hero = () => {
             <h5 className="thin my-2 line-h-2 hero-blurb slide-right delay-2">  Experience our seasonal menu in beautiful country surroundings. Eat the freshest produce from 
                   the comfort of our farmhouse.
             </h5>
-            <button className="btn transparent-btn rise-up delay-3">Book a table</button>
+            <button onClick={()=>setShowContact(true)} className="btn transparent-btn rise-up delay-3">Book a table</button>
             </div> 
         </div>
     </header>

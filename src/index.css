@@ -115,6 +115,7 @@ a {
   border: none;
   border-bottom: 2px solid black;
   padding: 1.5rem;
+  width: 100%;
 }
 
 .line-h-2 {
@@ -123,6 +124,10 @@ a {
 
 .muted {
   opacity: 50%;
+}
+
+.no-wrap {
+  white-space: nowrap;
 }
 
 @media screen and (max-width: 950px) {
