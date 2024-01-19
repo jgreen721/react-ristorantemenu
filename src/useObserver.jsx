@@ -13,12 +13,13 @@ export const useObserver = ref =>{
            observer.unobserve(entry.target)
         }
       
-    },{threshold:.5})
+    },{threshold:.2})
 
 
     useEffect(()=>{
         if(ref.current){
             observer.observe(ref.current)
+            // console.log(ref.current)
 
         }
        
