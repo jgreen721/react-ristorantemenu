@@ -50,6 +50,11 @@ const Gathering = ({setShowContact}) => {
         </div>
         <div className="gathering-column">
           <div className="gathering-content-card">
+          <ul className="mobile-option-btns">
+              {gatherings.map((g,idx)=>(
+                <GatheringItem delay={g.delay} isVisible={isVisible} val={idx} counter={counter} setCounter={handleChangeCounter} text={g.title} key={g.id}/>
+              ))}
+            </ul>
             <div className="gathering-content-row">
             {gatherings.map(gatheringItem=>(
               <li key={gatheringItem.id} style={{transform:`translateX(${-100 * counter}%`}} className="gathering-content-item">
@@ -59,7 +64,7 @@ const Gathering = ({setShowContact}) => {
             ))}
             </div>
             <button onClick={()=>setShowContact(true)} className="btn primary-btn scale-grow">Book a Table</button>
-            <ul className="option-btns">
+            <ul className="option-btns desktop-option-btns">
               {gatherings.map((g,idx)=>(
                 <GatheringItem delay={g.delay} isVisible={isVisible} val={idx} counter={counter} setCounter={handleChangeCounter} text={g.title} key={g.id}/>
               ))}

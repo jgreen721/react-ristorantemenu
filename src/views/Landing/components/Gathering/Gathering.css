@@ -122,6 +122,10 @@
   transform: rotateY(180deg);
 }
 
+.mobile-option-btns {
+  display: none;
+}
+
 @media screen and (max-width: 950px) {
   .gathering-parent {
     flex-direction: column;
@@ -170,5 +174,28 @@
     100% {
       width: 100%;
     }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .desktop-option-btns {
+    display: none;
+  }
+  .mobile-option-btns {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 3rem;
+    /* border: 2px solid red; */
+  }
+
+  .lines-container {
+    display: none;
+  }
+
+  .gathering-content-card {
+    margin-top: 0rem;
   }
 }
