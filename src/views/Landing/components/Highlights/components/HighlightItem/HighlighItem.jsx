@@ -2,7 +2,7 @@ import React from 'react'
 
 const HighlighItem = ({item,isVisible}) => {
   return (
-    <li className={isVisible ? `highlight-item fade-in ${item.imgDelay}` : "highlight-item"}>
+    <li className={isVisible ? `highlight-item scale-grow ${item.imgDelay}` : "highlight-item"}>
       <div className="highlight-img-div">
               <picture className="highlight-picture">
                   <source media="(min-width:950px)" srcSet={item.img.desktop}/>

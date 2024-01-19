@@ -11,6 +11,8 @@ const Highlights = () => {
         {id:2,name:"Rosemary Filet Mignon",blurb:"Our prime beef served to your taste with a delicious choice of seasonal sides.",img:{desktop:filetMignonDesktop,tablet:filetMignonTablet,mobile:filetMignonMobile},delay:"delay-2",imgDelay:"delay-3"},
         {id:3,name:"Summer Fruit Chocolate Mousse",blurb:"  Creamy mousse combined with summer fruits and dark chocolate shavings.",img:{desktop:chocolateMousseDesktop,tablet:chocolateMousseTablet,mobile:chocolateMousseMobile},delay:"delay-3",imgDelay:"delay-4"},
     ]
+
+    console.log("isVisible",isVisible)
   return (
     <div ref={elRef} className="highlights-container">
         <div className="highlights-content-row">

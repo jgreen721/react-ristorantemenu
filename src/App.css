@@ -138,6 +138,7 @@
 .fade-in {
   opacity: 0;
   animation: fadein 0.75s var(--delay) forwards;
+  opacity: 1;
 }
 
 @keyframes fadein {
