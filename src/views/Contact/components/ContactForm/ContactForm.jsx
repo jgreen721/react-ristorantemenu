@@ -1,5 +1,5 @@
 import React, {useRef,useState} from 'react'
-import { plusIcon, minusIcon } from '../../../../../../const';
+import { plusIcon, minusIcon } from '../../../../const';
 import "./ContactForm.css"
 
 const ContactForm = () => {
@@ -32,9 +32,11 @@ const ContactForm = () => {
                 <input type="text" placeholder="Email" autoComplete="off" name="email" className="form-control" />
             </div>
             <div className="form-number-row">
+
                 <div className="label-div">
                     <p className="mid-thin">Pick a date</p>
                 </div>
+                <div className="form-inputs-row">
                 <div className="form-dropdown-div">
                     <input type="number" className="number-input" placeholder="MM" min="1" max="12" />
                 </div>
@@ -44,11 +46,13 @@ const ContactForm = () => {
                 <div className="form-dropdown-div">
                     <input type="number" className="number-input" placeholder="YYYY" min="2024" max="2026" />
                 </div>
+                </div>
             </div>
             <div className="form-number-row">
                 <div className="label-div">
                     <p className="mid-thin">Pick a time</p>
                 </div>
+                <div className="form-inputs-row">
                 <div className="form-dropdown-div">
                     <input type="number" className="number-input" placeholder="09" min="1" max="12" />
                 </div>
@@ -60,6 +64,7 @@ const ContactForm = () => {
                         <option value="AM">AM</option>
                         <option value="PM">PM</option>
                     </select>
+                </div>
                 </div>
               
             </div>

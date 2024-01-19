@@ -4,7 +4,7 @@ import {Footer} from "./components"
 import './App.css'
 
 function App() {
-  const [showContact,setShowContact] = useState(false);
+  const [showContact,setShowContact] = useState(true);
 
   return (
     <div className="app">

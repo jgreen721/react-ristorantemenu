@@ -1,0 +1,56 @@
+.contact-hero {
+  position: relative;
+  /* border: 2px solid red; */
+}
+
+.contact-hero-content-parent {
+  position: absolute;
+  inset: 0;
+  /* border: 5px solid blue; */
+  /* height: 100%; */
+  z-index: 10;
+  display: flex;
+}
+
+.contact-hero-content-column {
+  height: 100%;
+  /* border: 3px solid orange; */
+  flex: 1;
+}
+
+.left-hero-content-column {
+  padding: 6rem var(--mainPaddingX);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+}
+
+.contact-hero-content-card {
+  margin-bottom: 2rem; /*offset landing hero setup */
+  color: var(--white);
+}
+
+/* .contact-hero-img-column {
+  position: absolute;
+} */
+
+@media screen and (max-width: 950px) {
+  .contact-hero-content-parent {
+    flex-direction: column;
+  }
+
+  .contact-hero-content-card {
+    max-width: 100%;
+    height: 100%;
+    text-align: center;
+    margin: 6rem 0rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .contact-logo-div {
+    margin: 0 auto;
+  }
+}

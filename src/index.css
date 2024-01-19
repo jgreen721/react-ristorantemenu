@@ -163,4 +163,9 @@ a {
   h5 {
     font-size: 1.6rem;
   }
+
+  .btn {
+    white-space: unset;
+    padding: 2rem;
+  }
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import { curveBottomLeft, patternLines } from '../../../../const'
-import ContactForm from "./components/ContactForm/ContactForm"
+// import ContactForm from "./components/ContactForm/ContactForm"
 import "./FormRow.css"
 
 const FormRow = () => {
@@ -14,7 +14,7 @@ const FormRow = () => {
                 <img src={patternLines} alt="" />
             </div>
         </div>
-        <ContactForm/>
+        {/* <ContactForm/> */}
     </div>
   )
 }

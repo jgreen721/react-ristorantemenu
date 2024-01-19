@@ -14,7 +14,7 @@ const Hero = ({setShowContact}) => {
                 <h5 className="thin my-2 line-h-2 hero-blurb slide-right delay-2">  
                 Experience our seasonal menu in beautiful country surroundings. Eat the freshest produce from the comfort of our farmhouse.
                 </h5>
-                <button className="btn transparent-btn rise-up delay-3">Book a table</button>
+                <button onClick={()=>setShowContact(true)} className="btn transparent-btn rise-up delay-3">Book a table</button>
             </div> 
         </div> 
         <div className="hero-img-column">
