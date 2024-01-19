@@ -2,7 +2,7 @@
   background: var(--mainDarkBg);
   color: var(--primaryColor);
   padding: 12rem var(--mainPaddingX);
-  border: 5px solid red;
+  /* border: 5px solid red; */
 }
 .highlights-content-row {
   display: flex;
