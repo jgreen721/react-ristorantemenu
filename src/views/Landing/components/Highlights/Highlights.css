@@ -52,7 +52,7 @@
     gap: 3rem;
   }
 }
-/*
+
 @media screen and (max-width: 550px) {
   .highlight-item {
     flex-direction: column;
@@ -61,4 +61,4 @@
   .highlight-img-div::after {
     display: none;
   }
-} */
+}
