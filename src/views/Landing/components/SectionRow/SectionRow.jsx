@@ -12,13 +12,13 @@ const SectionRow = ({section}) => {
         {section.imgFirst &&
          <div className="section-column">
             <div className="section-svg-overlay center-start">
-                <img className="section-svg flip-svg" src={section.svgPattern} alt="" />
+                <img className="section-svg svg-center flip-svg" src={section.svgPattern} alt="" />
             </div>
             <div className="section-img-container">
             <picture>
                 <source media="(min-width:950px)" srcSet={section.img.desktop}/>
                 <source media="(min-width:550px)" srcSet={section.img.tablet}/>
-                <img className="section-img scale-grow" src={section.img.mobile} alt="section-img"/>
+                <img className={isVisible ? "section-img scale-grow" : "section-img pre-animate-shrink"} src={section.img.mobile} alt="section-img"/>
             </picture>
             </div>
         </div> 
@@ -37,7 +37,7 @@ const SectionRow = ({section}) => {
 
 
         {!section.imgFirst &&
-         <div className="section-column relative">
+         <div className="section-column">
             
             <div className="section-svg-overlay bottom-end">
                 <img className="section-svg" src={section.svgPattern} alt="" />
@@ -53,13 +53,26 @@ const SectionRow = ({section}) => {
         </div> 
         }
         </div>
+
+        {/* <!-- mobile section --> */}
         <div className="mobile-section">
+            {section.imgFirst ? 
+            <div className="section-svg-overlay center-offset-left">
+                <img className="section-svg svg-center flip-svg" src={section.svgPattern} alt="" />
+            </div>
+            :
+            <div className="section-svg-overlay bottom-end-offset">
+                <img className="section-svg" src={section.svgPattern} alt="" />
+            </div>
+}
             <div className="mobile-img-div">
             <picture>
                 <source media="(min-width:950px)" srcSet={section.img.desktop}/>
                 <source media="(min-width:550px)" srcSet={section.img.tablet}/>
                 <img className="section-img" src={section.img.mobile} alt="section-img"/>
-            </picture>            
+            </picture>  
+            {!section.imgFirst && <img className="mobile-lines-icon" src={patternLines} alt="" />
+}          
             </div>
             <div className="mobile-content-card">
                 <img className="pattern-img" src={patternDivide} alt="" />

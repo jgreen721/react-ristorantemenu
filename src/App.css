@@ -23,6 +23,10 @@
   --delay: 0.75s;
 }
 
+.delay-4 {
+  --delay: 1.25s;
+}
+
 .delay-5 {
   --delay: 2s;
 }
@@ -117,5 +121,27 @@
   }
   100% {
     transform: translateY(0rem);
+  }
+}
+
+.animate-italic {
+  animation: animateitalic 0.75s var(--delay) forwards;
+}
+
+@keyframes animateitalic {
+  100% {
+    font-style: italic;
+    font-weight: 300;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadein 0.75s var(--delay) forwards;
+}
+
+@keyframes fadein {
+  100% {
+    opacity: 1;
   }
 }

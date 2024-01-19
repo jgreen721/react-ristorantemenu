@@ -1,13 +1,10 @@
 .hero {
-  /* background: var(--maindarkBg); */
   color: var(--primaryColor);
   position: relative;
-  /* overflow: hidden; */
   /* border: 10px solid red; */
 }
 
 .hero-content-column {
-  /* border: 2px solid white; */
   padding: 6rem var(--mainPaddingX);
   position: absolute;
   inset: 0;
@@ -25,14 +22,12 @@
 }
 
 .hero-blurb {
-  /* margin-right: 15rem; */
   padding-right: 7.5rem;
 }
 
 .hero-img-column {
   /* border: 2px solid red; */
   position: relative;
-  /* border: 5px solid blue; */
 }
 
 .hero-img-column::after {
@@ -47,58 +42,61 @@
   /* border: 20px solid pink; */
 }
 
+.mobile-hero-content-column {
+  display: none;
+}
+
 @media screen and (max-width: 950px) {
-  .hero {
-    /* border: 3px solid orange; */
-    /* height: 85rem; */
+  /*can be dangerous with image but size/response works here */
+  .hero-img {
+    height: 100%;
+    width: 100%;
   }
 
-  .hero-img-column {
-    height: 40rem;
-    /* border: 5px solid red; */
-  }
-
-  .desktop-hero {
+  .desktop-hero-content-column {
     display: none;
   }
 
-  .hero-content-column {
-    position: relative;
+  .mobile-hero-content-column {
+    display: block;
+    /* border: 3px solid orange; */
+    position: absolute;
+    bottom: 0;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
-    /* inset: unset;
-    bottom: 0; */
-    /* border: 5px solid red; */
-    /* height: 50%; */
-    padding: 0rem var(--mainPaddingX);
     gap: 3rem;
-  }
-
-  .hero-img {
-    width: 100%;
-    height: 92rem;
-    /* height: 100%; */
-    /* border: 10px solid blue; */
+    height: fit-content;
+    background: var(--mainDarkBg);
+    padding: 2rem var(--mainPaddingX);
   }
 
   .hero-img-column::after {
     position: absolute;
     content: "";
-    height: 100%;
+    height: 60%;
     width: 100%;
     right: 0;
     top: 0;
-    background: linear-gradient(to left, white, white, transparent);
+    background: linear-gradient(white, white, transparent);
     opacity: 15%;
-    /* border: 10px solid green; */
+    z-index: 50;
   }
-
-  /* .hero-header {
-    margin: 0 8rem;
-  } */
 
   .hero-blurb {
     padding-right: 0rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .hero-img {
+    min-width: max-content;
+  }
+
+  .hero-content-card {
+    margin-bottom: 8rem;
   }
 }
