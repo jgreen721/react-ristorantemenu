@@ -14,8 +14,8 @@ const Highlights = () => {
 
     console.log("isVisible",isVisible)
   return (
-    <div ref={elRef} className="highlights-container">
-        <div className="highlights-content-row">
+    <div className="highlights-container">
+        <div ref={elRef} className="highlights-content-row">
             <div className="highlights-column">
                 <div className={isVisible ? "highlights-header-card fade-in delay-1" : "highlights-header-card"}>
                     <img src={patternDivide} alt="" />
